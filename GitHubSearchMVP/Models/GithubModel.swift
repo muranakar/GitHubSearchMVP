@@ -16,7 +16,7 @@ protocol SearchUserModelInput {
 }
 
 /// GithubのREST APIを叩いて、結果を返すクラス
-struct GithubModel: SearchUserModelInput {
+class GithubModel: SearchUserModelInput {
 
     private var endpoint: URLComponents {
         var components = URLComponents()
