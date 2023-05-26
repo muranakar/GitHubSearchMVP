@@ -21,6 +21,7 @@
 		B247D9872A20870000460D3A /* UsersSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B247D9862A20870000460D3A /* UsersSearchView.swift */; };
 		B247D9892A20878F00460D3A /* RepositoryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B247D9882A20878F00460D3A /* RepositoryController.swift */; };
 		B247D98B2A2087C500460D3A /* UserController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B247D98A2A2087C500460D3A /* UserController.swift */; };
+		B247D98D2A208DA100460D3A /* GitHubAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = B247D98C2A208DA100460D3A /* GitHubAPI.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +40,7 @@
 		B247D9862A20870000460D3A /* UsersSearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersSearchView.swift; sourceTree = "<group>"; };
 		B247D9882A20878F00460D3A /* RepositoryController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryController.swift; sourceTree = "<group>"; };
 		B247D98A2A2087C500460D3A /* UserController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserController.swift; sourceTree = "<group>"; };
+		B247D98C2A208DA100460D3A /* GitHubAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubAPI.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +97,7 @@
 			children = (
 				B247D9762A207E8F00460D3A /* GithubModel.swift */,
 				B247D97C2A207FCA00460D3A /* ModelError.swift */,
+				B247D98C2A208DA100460D3A /* GitHubAPI.swift */,
 				B247D9782A207F1F00460D3A /* User.swift */,
 				B247D97A2A207F5800460D3A /* Repository.swift */,
 			);
@@ -195,6 +198,7 @@
 				B247D9872A20870000460D3A /* UsersSearchView.swift in Sources */,
 				B247D9812A20865400460D3A /* RepositoryRow.swift in Sources */,
 				B247D9832A20868300460D3A /* RepositoryView.swift in Sources */,
+				B247D98D2A208DA100460D3A /* GitHubAPI.swift in Sources */,
 				B247D9682A207E1400460D3A /* ContentView.swift in Sources */,
 				B247D97D2A207FCA00460D3A /* ModelError.swift in Sources */,
 				B247D98B2A2087C500460D3A /* UserController.swift in Sources */,
