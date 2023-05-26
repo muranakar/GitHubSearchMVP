@@ -19,6 +19,8 @@
 		B247D9832A20868300460D3A /* RepositoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B247D9822A20868300460D3A /* RepositoryView.swift */; };
 		B247D9852A2086CA00460D3A /* UserRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = B247D9842A2086CA00460D3A /* UserRow.swift */; };
 		B247D9872A20870000460D3A /* UsersSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B247D9862A20870000460D3A /* UsersSearchView.swift */; };
+		B247D9892A20878F00460D3A /* RepositoryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B247D9882A20878F00460D3A /* RepositoryController.swift */; };
+		B247D98B2A2087C500460D3A /* UserController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B247D98A2A2087C500460D3A /* UserController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +37,8 @@
 		B247D9822A20868300460D3A /* RepositoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryView.swift; sourceTree = "<group>"; };
 		B247D9842A2086CA00460D3A /* UserRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRow.swift; sourceTree = "<group>"; };
 		B247D9862A20870000460D3A /* UsersSearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersSearchView.swift; sourceTree = "<group>"; };
+		B247D9882A20878F00460D3A /* RepositoryController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryController.swift; sourceTree = "<group>"; };
+		B247D98A2A2087C500460D3A /* UserController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +104,8 @@
 		B247D9742A207E5700460D3A /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
+				B247D9882A20878F00460D3A /* RepositoryController.swift */,
+				B247D98A2A2087C500460D3A /* UserController.swift */,
 			);
 			path = Presenter;
 			sourceTree = "<group>";
@@ -191,7 +197,9 @@
 				B247D9832A20868300460D3A /* RepositoryView.swift in Sources */,
 				B247D9682A207E1400460D3A /* ContentView.swift in Sources */,
 				B247D97D2A207FCA00460D3A /* ModelError.swift in Sources */,
+				B247D98B2A2087C500460D3A /* UserController.swift in Sources */,
 				B247D97B2A207F5800460D3A /* Repository.swift in Sources */,
+				B247D9892A20878F00460D3A /* RepositoryController.swift in Sources */,
 				B247D9852A2086CA00460D3A /* UserRow.swift in Sources */,
 				B247D9772A207E8F00460D3A /* GithubModel.swift in Sources */,
 				B247D9662A207E1400460D3A /* GitHubSearchMVPApp.swift in Sources */,

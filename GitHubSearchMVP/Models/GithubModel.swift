@@ -12,11 +12,19 @@ protocol SearchUserModelInput {
     /// QueryをもとにGithubのユーザー検索APIを叩いて、結果をcallbackする
     func fetchUser(query: String) async throws -> [User]
     /// Githubのあるユーザーのリポジトリ一覧を取得して、結果をcallbackする
-    func fetchRepository(urlString: String) async throws -> [Repository]
+    func fetchRepositories(urlString: String) async throws -> [Repository]
 }
 
 /// GithubのREST APIを叩いて、結果を返すクラス
-class GithubModel: SearchUserModelInput {
+class GithubModel: SearchUserModelInput ,ObservableObject{
+
+    @Published var users = [User]()
+    @Published var isNotFound = false
+
+    @Published var repositories = [Repository]()
+    @Published var isLoading = true
+
+    @Published var error: ModelError?
 
     private var endpoint: URLComponents {
         var components = URLComponents()
@@ -41,7 +49,7 @@ class GithubModel: SearchUserModelInput {
     }
 
 
-    func fetchRepository(urlString: String) async throws -> [Repository] {
+    func fetchRepositories(urlString: String) async throws -> [Repository] {
         guard let url = URL(string: urlString) else {
             throw ModelError.urlError
         }
