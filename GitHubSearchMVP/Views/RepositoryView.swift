@@ -20,7 +20,13 @@ struct RepositoryView: View {
                 ProgressView()
                     .scaleEffect(x: 3, y: 3, anchor: .center)
                     .onAppear {
-                        RepositoryController(model: model, urlString: repositoryUrlString).loadStart()
+                        do {
+                            Task{
+                                await try RepositoryController(model: model, urlString: repositoryUrlString).loadStart()
+                            }
+                        } catch let error as ModelError {
+                            Text(error.localizedDescription)
+                        }
                     }
             } else {
                 if model.repositories.isEmpty {

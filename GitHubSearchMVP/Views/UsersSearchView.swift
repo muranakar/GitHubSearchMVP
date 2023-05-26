@@ -16,7 +16,10 @@ struct UserSearchView: View {
             VStack {
                 TextField("user name", text: $searchText)
                     .onChange(of: searchText) { _ in
-                        UserController(model: model, query: searchText).loadStart()
+                        Task {
+                            try await UserController(model: model, query: searchText).loadStart()
+                        }
+
                     }
                     .textFieldStyle(RoundedBorderTextFieldStyle())
                     .keyboardType(.asciiCapable)
@@ -34,7 +37,10 @@ struct UserSearchView: View {
                             }
                         }
                         .refreshable {
-                            UserController(model: model, query: searchText).loadStart()
+                            Task{
+                                try await                             UserController(model: model, query: searchText).loadStart()
+
+                            }
                         }
                     }
                 }

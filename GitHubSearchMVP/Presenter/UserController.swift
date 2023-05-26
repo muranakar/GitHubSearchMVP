@@ -15,7 +15,7 @@ struct UserController {
     /// Modelにロード開始を要求する
     public func loadStart() async throws {
         do {
-            try await model.fetchUser(query: query)
+            await model.fetchUser(query: query)
         }
     }
 }

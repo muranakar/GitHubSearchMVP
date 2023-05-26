@@ -16,7 +16,6 @@ struct RepositoryController {
         do {
             try await model.fetchRepositories(urlString: urlString)
         }
-
     }
 
 }
