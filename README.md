@@ -1,6 +1,6 @@
-# GitHubSearchMVP
+# `async await`を理解するために、サンプル実装
 
 https://github.com/0si43/iOS-architecture-training
 
-をもとに作成、
-async await　を用いて実装。Result<>型なしで実装。
+を参考にしました。
+`Result<>`を`async await`に変更しました。
